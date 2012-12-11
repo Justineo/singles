@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-    用 AMD、CommonJS 及 ES Harmony 书写模块化的 JavaScript
+    使用 AMD、CommonJS 及 ES Harmony 编写模块化的 JavaScript
     </title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -15,9 +15,9 @@
     <link href="assets/bootstrap.css" rel="stylesheet">
     <link href="assets/prettify.css" rel="stylesheet">
 
-    <meta name="title" content="用 AMD、CommonJS 及 ES Harmony 书写模块化的 JavaScript" />
+    <meta name="title" content="使用 AMD、CommonJS 及 ES Harmony 编写模块化的 JavaScript" />
 
-    <meta name="description" content="学习如何使用如 AMD 及 CommonJS 这样的现代同步及异步格式来书写模块化的 JavaScript" />
+    <meta name="description" content="学习如何使用如 AMD 及 CommonJS 这样的现代同步及异步格式来编写模块化的 JavaScript" />
 
     <link rel="image_src" href="http://www.addyosmani.com/writing-modular-js/screenshot.jpg" />
 
@@ -125,7 +125,7 @@
 <body onload="prettyPrint();">
     <div class="hr"></div>
     <div class="toplineHeader">
-        <h1>用 AMD、CommonJS 及 ES Harmony 书写模块化的 JavaScript</h1>
+        <h1>用 AMD、CommonJS 及 ES Harmony 编写模块化的 JavaScript</h1>
         <div class="credits">
         <small>作者：<a href="http://twitter.com/addyosmani">Addy Osmani</a>&nbsp; 技术审阅：<a href="http://twitter.com/peolanha">Andr&#233;e Hansson</a><br>
         <small class="special">特别鸣谢 <a href="http://twitter.com/jrburke">JAMES BURKE</a>、<a href="http://twitter.com/unscriptable">JOHN HANN</a> 以及 <a href="http://twitter.com/neutralthoughts">THOMAS DAVIS</a></small></small><br>
@@ -160,9 +160,9 @@
 
 <p>作为代替，当前的开发者们只能被迫降级使用<a href="http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth">模块模式</a>或是<a href="http://rmurphey.com/blog/2009/10/15/using-objects-to-organize-your-code/">对象字面量模式</a>的各种变体。通过很多这样的方法，各模块的脚本被串在一起放入到 DOM 中<span class="translate-note">（译注：这里用 DOM 其实是不正确的，应为全局环境）</span>，其命名空间是由单一的全局对象来描述的。你的整个体系架构在这种模式下，仍然有可能发生命名冲突。想要简洁地管理依赖关系，不通过一些手工处理或借助第三方库往往是不可能的。</span></p>
 
-<p>尽管这些问题的原生解决方案在 <a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">ES Harmony</a> 中才会被引入，但好消息是，书写模块化的 JavaScript 目前已经变得极为简单，甚至今天就可以开始动手。</p>
+<p>尽管这些问题的原生解决方案在 <a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">ES Harmony</a> 中才会被引入，但好消息是，编写模块化的 JavaScript 目前已经变得极为简单，甚至今天就可以开始动手。</p>
 
-<p>在本文中，我们将会考察三种书写模块化 JavaScript 的格式：<strong>AMD</strong>、<strong>CommonJS</strong> 以及 JavaScript 下一个版本中的提案——<strong>Harmony</strong>。</p>
+<p>在本文中，我们将会考察三种编写模块化 JavaScript 的格式：<strong>AMD</strong>、<strong>CommonJS</strong> 以及 JavaScript 下一个版本中的提案——<strong>Harmony</strong>。</p>
 
 <div class="hr"></div>
 
@@ -182,7 +182,7 @@
 <div class="hr"></div>
 
 <div class="page-header">
-    <h2>AMD <small>一种在浏览器中书写模块化 JavaScript 的格式</small></h2>
+    <h2>AMD <small>一种在浏览器中编写模块化 JavaScript 的格式</small></h2>
 </div>
 
 <p>AMD（异步模块定义，Asynchronous Module Definition）格式总体的目标是为现在的开发者提供一个可用的模块化 JavaScript 的解决方案。它诞生于 Dojo 的在使用 XHR+eval 时的实践经验，其支持者希望未来的解决方案都可以免受由于过去方案的缺陷所带来的麻烦。</p>
@@ -343,7 +343,7 @@ define(['lib/Deferred'], function( Deferred ){
 </pre>
 
 
-<h4>为什么 AMD 对于书写模块化 JavaScript 是一个更好的选择？</h4>
+<h4>为什么 AMD 对于编写模块化 JavaScript 是一个更好的选择？</h4>
 
 <ul>
     <li>为如何定义高灵活性的模块提供了一个清晰的方案。</li>
@@ -908,11 +908,11 @@ $(function(){
     <h2>ES Harmony <small>未来的模块</small></h2>
   </div>
 
-<p><a href="http://www.ecma-international.org/memento/TC39.htm">TC39</a>，负责制定 ECMAScript 语法和语义以及其未来迭代的标准团体，是由一部分非常聪明的开发者组成的。其中的一些人（比如<a href="http://twitter.com/slightlylate">Alex Russell</a>）在近几年一直在密切关注 JavaScript 在大规模开发中的使用情况的演进，而且也敏感地意识到了需要有更好的语言特性来书写更加模块化的 JS。</p>
+<p><a href="http://www.ecma-international.org/memento/TC39.htm">TC39</a>，负责制定 ECMAScript 语法和语义以及其未来迭代的标准团体，是由一部分非常聪明的开发者组成的。其中的一些人（比如<a href="http://twitter.com/slightlylate">Alex Russell</a>）在近几年一直在密切关注 JavaScript 在大规模开发中的使用情况的演进，而且也敏感地意识到了需要有更好的语言特性来编写更加模块化的 JS。</p>
 
 <p>基于这个原因，目前有提案已经提出了一系列令人振奋的对语言的补充，包括灵活的、可以同时在客户端与服务器端使用的 <a href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">模块</a>、一个<a href="http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders">模块加载器</a>以及<a href="http://wiki.ecmascript.org/doku.php?id=harmony:proposals">其它</a>。在这个章节中，我将向你展示一些 ES.next 中语法的代码样例，让你能对即将到来的东西一睹为快。<span class="translate-note">（译注：关于 ES.next 与 ES Harmony 的关系，可以参考<a href="http://www.2ality.com/2011/06/ecmascript.html">这篇</a>文章。）</span></p>
 
-<p><div class="alert-message"><strong>注：</strong>尽管 Harmony 仍然在提案阶段中，多亏了 Google 的 <a href="http://code.google.com/p/traceur-compiler/">Traceur</a> 编译器，你已经可以（部分地）尝试 ES.next 引入的对书写模块化 JavaScript 进行原生支持的特性。想要立刻获取并运行 Traceur，请阅读这篇<a href="http://code.google.com/p/traceur-compiler/wiki/GettingStarted">入门</a>指南。如果你有兴趣对这个项目了解更多的话，还有一个 JSConf 上相关的<a href="http://traceur-compiler.googlecode.com/svn/branches/v0.10/presentation/index.html">演讲</a>也值得一看。</div></p>
+<p><div class="alert-message"><strong>注：</strong>尽管 Harmony 仍然在提案阶段中，多亏了 Google 的 <a href="http://code.google.com/p/traceur-compiler/">Traceur</a> 编译器，你已经可以（部分地）尝试 ES.next 引入的对编写模块化 JavaScript 进行原生支持的特性。想要立刻获取并运行 Traceur，请阅读这篇<a href="http://code.google.com/p/traceur-compiler/wiki/GettingStarted">入门</a>指南。如果你有兴趣对这个项目了解更多的话，还有一个 JSConf 上相关的<a href="http://traceur-compiler.googlecode.com/svn/branches/v0.10/presentation/index.html">演讲</a>也值得一看。</div></p>
 
 <h3>包含导入与导出的模块</h3>
 <p>如果你已经读完了关于 AMD 与 CJS 模块的章节，你可能已经对模块依赖（导入）以及模块导出（或者说公用 API/我们允许其他模块使用的变量）的概念比较熟悉了。在 ES.next 中，这些概念被以一种更为精简的方式提出，用了一个关键字 <code>import</code> 来指定模块的依赖项。<code>export</code> 则和我们想象的没有多大差别，我认为很多开发者看了下面的代码就能立刻明白。</p>
@@ -1067,7 +1067,7 @@ class Cake{
 <div class="page-header">
     <h2>结论与深入阅读 <small>回顾</small></h2>
 </div>
-<p>在本文中我们审视了关于用现代的模块格式来书写模块化 JavaScript 的几个可选方案。这些格式相较于仅使用（传统的）模块模式有着许多优势，包括：让开发者们避免了为每个创建的模块建立全局变量、对静态与动态的依赖关系管理有着更好的支持、对脚本加载器有更高的兼容性、对服务器端模块也有着更好的（可选的）兼容性等等。</p>
+<p>在本文中我们审视了关于用现代的模块格式来编写模块化 JavaScript 的几个可选方案。这些格式相较于仅使用（传统的）模块模式有着许多优势，包括：让开发者们避免了为每个创建的模块建立全局变量、对静态与动态的依赖关系管理有着更好的支持、对脚本加载器有更高的兼容性、对服务器端模块也有着更好的（可选的）兼容性等等。</p>
 <p>总之，我推荐你试试看今天建议的东西，因为这些格式提供了强大的功能以及灵活性，在基于可复用功能块构建应用程序时会很有帮助。</p>
 
 <p>今天就到这里。如果你对于今天提到的话题还有更深入的问题，请随意来 <a href="http://twitter.com/addyosmani">twitter</a> 骚扰我，我会尽力帮忙！</p>
@@ -1081,16 +1081,6 @@ class Cake{
 
 
 </div>
-
-<script type="text/javascript">var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-10445040-2']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-</script>
 
 </body>
 </html>
